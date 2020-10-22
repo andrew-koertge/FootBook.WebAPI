@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -310,6 +311,14 @@
     <ProjectReference Include="..\FootBook.Data\FootBook.Data.csproj">
       <Project>{2FAD2A0A-27F7-4AEF-BF28-986B81A01D6F}</Project>
       <Name>FootBook.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FootBook.Models\FootBook.Models.csproj">
+      <Project>{EEFB396E-2F7D-468C-A484-6967027B8943}</Project>
+      <Name>FootBook.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FootBook.Services\FootBook.Services.csproj">
+      <Project>{376D7E00-04F0-4BB0-952F-C034AD0DD159}</Project>
+      <Name>FootBook.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

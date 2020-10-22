@@ -5,17 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FootBook.Data
+namespace FootBook.Models
 {
-    public class Post
+    public class PostCreate
     {
-        [Key]
-        public int PostId { get; set; }
         [Required]
+        [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]
+        [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
         public string Title { get; set; }
-        [Required]
+
         public string Content { get; set; }
-        [Required]
-        public User Author { get; set; }
+
     }
 }

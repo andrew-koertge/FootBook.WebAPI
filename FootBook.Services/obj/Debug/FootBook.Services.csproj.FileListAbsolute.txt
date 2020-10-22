@@ -27,3 +27,9 @@ C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\obj\Debug\FootBook.Serv
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\obj\Debug\FootBook.Services.csproj.CopyComplete
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\obj\Debug\FootBook.Services.dll
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\obj\Debug\FootBook.Services.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Data.dll
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Models.dll
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Data.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Data.dll.config
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Models.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Services\bin\Debug\FootBook.Models.dll.config

@@ -27,3 +27,6 @@ C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.csp
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.dll
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.Migrations.InitialCreate.resources
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.Data\obj\Debug\FootBook.Data.Migrations.InitialCreationofDatabase.resources

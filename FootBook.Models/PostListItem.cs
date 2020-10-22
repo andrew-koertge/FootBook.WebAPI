@@ -5,17 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FootBook.Data
+namespace FootBook.Models
 {
-    public class Post
+    public class PostListItem
     {
-        [Key]
         public int PostId { get; set; }
-        [Required]
         public string Title { get; set; }
-        [Required]
-        public string Content { get; set; }
-        [Required]
-        public User Author { get; set; }
+        [Display(Name = "Created")]
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }

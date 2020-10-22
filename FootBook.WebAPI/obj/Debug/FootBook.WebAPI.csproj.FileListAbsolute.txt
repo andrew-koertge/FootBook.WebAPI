@@ -117,3 +117,9 @@ C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\Microsoft.CodeDom.Pro
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\obj\Debug\FootBook.WebAPI.csproj.CopyComplete
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\obj\Debug\FootBook.WebAPI.dll
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\obj\Debug\FootBook.WebAPI.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Models.dll
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Services.dll
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Models.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Models.dll.config
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Services.pdb
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Services.dll.config
