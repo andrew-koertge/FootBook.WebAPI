@@ -3,32 +3,52 @@ namespace FootBook.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class ChangethenameCommenttoPost : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Comment",
+                c => new
+                    {
+                        CommentId = c.Int(nullable: false, identity: true),
+                        Text = c.String(nullable: false),
+                        UserId = c.Int(nullable: false),
+                        PostId = c.Int(nullable: false),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
+                        ReplyComment_CommentId = c.Int(),
+                    })
+                .PrimaryKey(t => t.CommentId)
+                .ForeignKey("dbo.Author", t => t.UserId, cascadeDelete: true)
+                .ForeignKey("dbo.Post", t => t.PostId, cascadeDelete: true)
+                .ForeignKey("dbo.Comment", t => t.ReplyComment_CommentId)
+                .Index(t => t.UserId)
+                .Index(t => t.PostId)
+                .Index(t => t.ReplyComment_CommentId);
+            
+            CreateTable(
+                "dbo.Author",
+                c => new
+                    {
+                        UserId = c.Int(nullable: false, identity: true),
+                        OwnerId = c.Guid(nullable: false),
+                        Name = c.String(nullable: false),
+                        Email = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.UserId);
+            
             CreateTable(
                 "dbo.Post",
                 c => new
                     {
                         PostId = c.Int(nullable: false, identity: true),
                         Title = c.String(nullable: false),
-                        Text = c.String(nullable: false),
-                        Author_UserId = c.Guid(nullable: false),
+                        Content = c.String(nullable: false),
+                        UserId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.PostId)
-                .ForeignKey("dbo.User", t => t.Author_UserId, cascadeDelete: true)
-                .Index(t => t.Author_UserId);
-            
-            CreateTable(
-                "dbo.User",
-                c => new
-                    {
-                        UserId = c.Guid(nullable: false),
-                        Name = c.String(nullable: false),
-                        Email = c.String(nullable: false),
-                    })
-                .PrimaryKey(t => t.UserId);
+                .ForeignKey("dbo.Author", t => t.UserId, cascadeDelete: false)
+                .Index(t => t.UserId);
             
             CreateTable(
                 "dbo.IdentityRole",
@@ -108,19 +128,26 @@ namespace FootBook.Data.Migrations
             DropForeignKey("dbo.IdentityUserLogin", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserClaim", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserRole", "IdentityRole_Id", "dbo.IdentityRole");
-            DropForeignKey("dbo.Post", "Author_UserId", "dbo.User");
+            DropForeignKey("dbo.Comment", "ReplyComment_CommentId", "dbo.Comment");
+            DropForeignKey("dbo.Comment", "PostId", "dbo.Post");
+            DropForeignKey("dbo.Post", "UserId", "dbo.Author");
+            DropForeignKey("dbo.Comment", "UserId", "dbo.Author");
             DropIndex("dbo.IdentityUserLogin", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserClaim", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "IdentityRole_Id" });
-            DropIndex("dbo.Post", new[] { "Author_UserId" });
+            DropIndex("dbo.Post", new[] { "UserId" });
+            DropIndex("dbo.Comment", new[] { "ReplyComment_CommentId" });
+            DropIndex("dbo.Comment", new[] { "PostId" });
+            DropIndex("dbo.Comment", new[] { "UserId" });
             DropTable("dbo.IdentityUserLogin");
             DropTable("dbo.IdentityUserClaim");
             DropTable("dbo.ApplicationUser");
             DropTable("dbo.IdentityUserRole");
             DropTable("dbo.IdentityRole");
-            DropTable("dbo.User");
             DropTable("dbo.Post");
+            DropTable("dbo.Author");
+            DropTable("dbo.Comment");
         }
     }
 }

@@ -10,7 +10,6 @@ namespace FootBook.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "FootBook.Data.ApplicationDbContext";
         }
 
         protected override void Seed(FootBook.Data.ApplicationDbContext context)

@@ -7,13 +7,13 @@ namespace FootBook.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class InitialCreationofDatabase : IMigrationMetadata
+    public sealed partial class ChangethenameCommenttoPost : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreationofDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangethenameCommenttoPost));
         
         string IMigrationMetadata.Id
         {
-            get { return "202010220210350_Initial Creation of Database"; }
+            get { return "202010230011537_Change the name Comment to Post"; }
         }
         
         string IMigrationMetadata.Source

@@ -123,3 +123,5 @@ C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Models.pdb
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Models.dll.config
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Services.pdb
 C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\FootBook.Services.dll.config
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\Swashbuckle.Core.dll
+C:\ElevenFiftyProjects\FootBook.WebAPI\FootBook.WebAPI\bin\WebActivatorEx.dll

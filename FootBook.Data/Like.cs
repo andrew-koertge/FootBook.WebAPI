@@ -12,6 +12,6 @@ namespace FootBook.Data
         [Required]
         public Post LikedPost { get; set; }
         [Required]
-        public User Liker { get; set; }
+        public Author Liker { get; set; }
     }
 }

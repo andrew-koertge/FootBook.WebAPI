@@ -78,30 +78,30 @@
     <Compile Include="Comment.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Like.cs" />
-    <Compile Include="Migrations\202010210103449_InitialCreate.cs" />
-    <Compile Include="Migrations\202010210103449_InitialCreate.Designer.cs">
-      <DependentUpon>202010210103449_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202010230011537_Change the name Comment to Post.cs" />
+    <Compile Include="Migrations\202010230011537_Change the name Comment to Post.Designer.cs">
+      <DependentUpon>202010230011537_Change the name Comment to Post.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202010220210350_Initial Creation of Database.cs" />
-    <Compile Include="Migrations\202010220210350_Initial Creation of Database.Designer.cs">
-      <DependentUpon>202010220210350_Initial Creation of Database.cs</DependentUpon>
+    <Compile Include="Migrations\202010241441059_Experiment.cs" />
+    <Compile Include="Migrations\202010241441059_Experiment.Designer.cs">
+      <DependentUpon>202010241441059_Experiment.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reply.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Author.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202010210103449_InitialCreate.resx">
-      <DependentUpon>202010210103449_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010230011537_Change the name Comment to Post.resx">
+      <DependentUpon>202010230011537_Change the name Comment to Post.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010220210350_Initial Creation of Database.resx">
-      <DependentUpon>202010220210350_Initial Creation of Database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010241441059_Experiment.resx">
+      <DependentUpon>202010241441059_Experiment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

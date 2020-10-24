@@ -7,13 +7,13 @@ namespace FootBook.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class Experiment : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Experiment));
         
         string IMigrationMetadata.Id
         {
-            get { return "202010210103449_InitialCreate"; }
+            get { return "202010241441059_Experiment"; }
         }
         
         string IMigrationMetadata.Source
